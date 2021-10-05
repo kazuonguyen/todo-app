@@ -41,7 +41,7 @@ export default function Todo({ todo, onCheckBtnClick, onDelBtnClick }) {
         !todo.isCompleted ? (
           <>
           <span className='check-icon' onClick={() => onDelBtnClick(todo.id)}>
-            <CrossIcon primaryColor='#4fff4f' />
+            <CrossIcon primaryColor='#FF0000' />
           </span>
           <span className='check-icon' onClick={()=>onCheckBtnClick(todo.id)}>
             <CheckIcon primaryColor="#4fff4f" />
@@ -50,7 +50,7 @@ export default function Todo({ todo, onCheckBtnClick, onDelBtnClick }) {
         )
         : (
           <span className='check-icon' onClick={() => onDelBtnClick(todo.id)}>
-            <CrossIcon primaryColor='#4fff4f' />
+            <CrossIcon primaryColor='#FF0000' />
           </span>
         )
         
